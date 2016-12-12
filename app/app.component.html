@@ -1,0 +1,21 @@
+<div>{{name}}</div>
+<h1>Hello {{myHero}}</h1>
+<ul>
+  <!--模板中使用 Angular 的ngFor指令来显示heroes列表中的每一项。-->
+  <!--<li>元素里的*ngFor是 Angular 的“迭代”指令。 它将<li>元素及其子级标记为“迭代模板”：-->
+  <!--ngFor双引号表达式中的hero-->
+  <li *ngFor="let hero of heroes" >
+    {{hero.id}}
+    {{hero.name}}
+  </li>
+</ul>
+<!--通过 NgIf 进行条件显示-->
+<!--*ngIf中的前导星号 (*)。它是本语法中不可或缺的一部分-->
+<p *ngIf="heroes.length > 3" >There are many heroes!</p>
+<p>
+  <click-me></click-me>
+</p>
+<div>
+  <h4>Give me some keys!</h4>
+  <key-up1></key-up1>
+</div>
