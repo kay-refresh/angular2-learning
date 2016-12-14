@@ -10,10 +10,10 @@ import {Hero} from "./hero";
 export class AppComponent  {
   name = 'Angular';
   heroes = [
-    new Hero(1, 'Windstorm'),
-    new Hero(13, 'Bombasto'),
-    new Hero(15, 'Magneta'),
-    new Hero(20, 'Tornado')
+    new Hero(1, 'Windstorm','a','b'),
+    new Hero(13, 'Bombasto','c','d'),
+    new Hero(15, 'Magneta','e','f'),
+    new Hero(20, 'Tornado','g','h')
   ];
   myHero = this.heroes[2].id;
 }
